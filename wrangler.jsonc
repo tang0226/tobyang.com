@@ -1,0 +1,12 @@
+{
+  // Must match the Worker name in the Cloudflare dashboard.
+  "name": "tang0226-com",
+  "compatibility_date": "2026-10-01",
+  // `output: "export"` in next.config.ts writes a fully static site to `out/`.
+  // Declaring it here stops `wrangler deploy` from auto-detecting Next.js and
+  // running the OpenNext server adapter, which fails on a static export.
+  "assets": {
+    "directory": "./out",
+    "not_found_handling": "404-page"
+  }
+}
