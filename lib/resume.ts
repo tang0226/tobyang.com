@@ -51,7 +51,7 @@ export const education: Education[] = [
     credential: "BS Computer Science",
     start: "2026",
     end: "2026",
-    detail: "Projected to finish the second half of my bachelor's program by November, after 6 months of enrollment",
+    detail: "Projected to finish the second half of my bachelor's program in October, after 6 months of enrollment",
   },
 ];
 
@@ -62,7 +62,7 @@ export const skills: SkillGroup[] = [
   },
   {
     label: "Frameworks",
-    items: ["React", "Next.js"],
+    items: ["React", "Next.js", "Spring Boot"],
   },
   {
     label: "Development tools",

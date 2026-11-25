@@ -24,17 +24,9 @@ export default async function ProjectsPage() {
     <>
       <header>
         <h1 className="font-display text-4xl font-medium tracking-tight">Projects</h1>
-        <p className="mt-3 text-pretty text-muted">
-          Things I have designed, built, and shipped.
-        </p>
       </header>
 
-      {projects.length === 0 ? (
-        <p className="mt-12 text-muted">
-          No projects yet — add an <code className="font-mono">.mdx</code> file to{" "}
-          <code className="font-mono">content/projects/</code>.
-        </p>
-      ) : (
+      {projects.length === 0 ? null : (
         <div className="mt-12 space-y-12">
           {[...byYear].map(([year, group]) => (
             <section key={year}>
